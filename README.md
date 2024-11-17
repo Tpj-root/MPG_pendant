@@ -44,7 +44,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 ### DB25 Port Connector Pinout Configuration
 
 | Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
-| 1 | RED  |   |+V, VCC, +5V5  | Pin_Description |
+| 1 | RED  |   | +V, VCC, +5V5  | Pin_Description |
 | 2 | BLACK  |   | Pin_Name  | Pin_Description |
 | 3 | GREEN  |D2| Pin_Name  | Pin_Description |
 | 4 | WHITE  |D3| Pin_Name  | Pin_Description |
@@ -52,7 +52,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 6 | PURPLE/BLACK  |   | Pin_Name  | Pin_Description |
 | 7 | GREEN/BLACK  |   | Pin_Name  | Pin_Description |
 | 8 | WHITE/BLACK  |   | Pin_Name  | Pin_Description |
-|-|-|-| OFF  |-|
+|-|-|-| OFF  | - |
 | 9 | YELLOW  |   | Pin_Name  | Pin_Description |
 | 10 | YELLOW/BLACK  |   | Pin_Name  | Pin_Description |
 | 11 | BROWN  |   | Pin_Name  | Pin_Description |
@@ -68,11 +68,11 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 19 | LIGHT BLUE   |   | Pin_Name  | Pin_Description |
 | 20 | BLUE/BLACK   |   | Pin_Name  | Pin_Description |
 | 21 | RED/BLACK   |   | Pin_Name  | Pin_Description |
-| 22 | SHIELD   |-| -| SHIELD |
+| 22 | SHIELD   |-| -| GND/SHIELD |
 |-|-|-| -  |-|
-| 23 | NOT_USED   |-| -| - |
-| 24 | NOT_USED   |-| -| - |
-| 25 | NOT_USED   |-| -| - |
+| 23 | Not Connected   |-| -| - |
+| 24 | Not Connected   |-| -| - |
+| 25 | Not Connected   |-| -| - |
 
 	
 
