@@ -46,30 +46,30 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 | Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
 | --- |  --- | --- |  --- | --- |
-| 1 | <span style="color:red;">RED</span>  |   | +V, VCC, +5V5  | Pin_Description |
-| 2 | BLACK  |   | Pin_Name  | Pin_Description |
-| 3 | GREEN  |D2| Pin_Name  | Pin_Description |
-| 4 | WHITE  |D3| Pin_Name  | Pin_Description |
-| 5 | PURPLE  |   | Pin_Name  | Pin_Description |
-| 6 | PURPLE/BLACK  |   | Pin_Name  | Pin_Description |
-| 7 | GREEN/BLACK  |   | Pin_Name  | Pin_Description |
-| 8 | WHITE/BLACK  |   | Pin_Name  | Pin_Description |
+| 1 | RED |   | +V, VCC, +5V5  | Rotary Encoder |
+| 2 | BLACK  |   | 0V, GND  | Rotary Encoder |
+| 3 | GREEN  |D2| A  | Rotary Encoder |
+| 4 | WHITE  |D3| B  | Rotary Encoder |
+| 5 | PURPLE  |   | A/  | Line Driver Type |
+| 6 | PURPLE/BLACK  |   | B/  | Line Driver Type |
+| 7 | GREEN/BLACK  |   | +  | Show Lamp |
+| 8 | WHITE/BLACK  |   | -, GND  | Show Lamp |
 |-|-|-| OFF  | - |
-| 9 | YELLOW  |   | Pin_Name  | Pin_Description |
-| 10 | YELLOW/BLACK  |   | Pin_Name  | Pin_Description |
-| 11 | BROWN  |   | Pin_Name  | Pin_Description |
-| 12 | BROWN/BLACK  |   | Pin_Name  | Pin_Description |
-| 13 | PINK  |   | Pin_Name  | Pin_Description |
-| 14 | PINK/BLACK |   | Pin_Name  | Pin_Description |
+| 9 | YELLOW  | D4| X  | Axis of coordinates |
+| 10 | YELLOW/BLACK  |D5| Y  | Axis of coordinates |
+| 11 | BROWN  |D6| Z  | Axis of coordinates |
+| 12 | BROWN/BLACK  |D7| 4  | Axis of coordinates |
+| 13 | PINK  |D8| 5  | Axis of coordinates |
+| 14 | PINK/BLACK |D9| 6  | Axis of coordinates |
 |-|-|-| -  |-|
-| 15 | GRAY  |   | Pin_Name  | Pin_Description |
-| 16 | GRAY/BLACK  |   | Pin_Name  | Pin_Description |
-| 17 | ORANGE  |   | Pin_Name  | Pin_Description |
-| 18 | ORANGE/BLACK |   | Pin_Name  | Pin_Description |
+| 15 | GRAY  |A1| X1, 0.1  | Amplificatory Multiple |
+| 16 | GRAY/BLACK  |A2| X10, 0.01  | Amplificatory Multiple |
+| 17 | ORANGE  |A3| X100, 0.001  | Amplificatory Multiple |
+| 18 | ORANGE/BLACK |   | COM, GND  | Control Switch |
 |-|-|-| -  |-|
-| 19 | LIGHT BLUE   |   | Pin_Name  | Pin_Description |
-| 20 | BLUE/BLACK   |   | Pin_Name  | Pin_Description |
-| 21 | RED/BLACK   |   | Pin_Name  | Pin_Description |
+| 19 | LIGHT BLUE   |A0| C  | Pin_Description |
+| 20 | BLUE/BLACK   |   | CN  | Pin_Description |
+| 21 | RED/BLACK   |   | -  | Spare |
 | 22 | SHIELD   |-| -| GND/SHIELD |
 |-|-|-| -  |-|
 | 23 | Not Connected   |-| -| - |
