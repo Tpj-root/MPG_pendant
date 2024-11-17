@@ -46,7 +46,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 | Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
 | --- |  --- | --- |  --- | --- |
-| 1 | RED  |   | +V, VCC, +5V5  | Pin_Description |
+| 1 | <span style="color:red;">RED</span>  |   | +V, VCC, +5V5  | Pin_Description |
 | 2 | BLACK  |   | Pin_Name  | Pin_Description |
 | 3 | GREEN  |D2| Pin_Name  | Pin_Description |
 | 4 | WHITE  |D3| Pin_Name  | Pin_Description |
