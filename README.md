@@ -48,9 +48,9 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 | Pin_Number | Pin_Color | Pin_ArduinoNano  | Pin_Signal  | Pin_Description |
 | --- |  --- | --- |  --- | --- |
-| 1 | <img src="colurs/red.png" width="20" height="20" alt="Red Image"><p>RED</p> |   | +V, VCC, +5V5  | Rotary Encoder |
-| 2 | BLACK  |   | 0V, GND  | Rotary Encoder |
-| 3 | GREEN  |D2| A  | Rotary Encoder |
+| 1 | <img src="colurs/red.png" width="20" height="20" alt="Red Image"> <p>RED</p> |   | +V, VCC, +5V5  | Rotary Encoder |
+| 2 | <img src="colurs/black.png" width="20" height="20" alt="Red Image"> <p>BLACK</p>  |   | 0V, GND  | Rotary Encoder |
+| 3 | <img src="colurs/green.png" width="20" height="20"> <p>GREEN</p>  |D2| A  | Rotary Encoder |
 | 4 | WHITE  |D3| B  | Rotary Encoder |
 | 5 | PURPLE  |   | A/  | Line Driver Type |
 | 6 | PURPLE/BLACK  |   | B/  | Line Driver Type |
