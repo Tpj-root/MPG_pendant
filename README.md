@@ -57,9 +57,9 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 7 | GREEN/BLACK  |   | +  | Show Lamp |
 | 8 | WHITE/BLACK  |   | -, GND  | Show Lamp |
 |-|-|-| OFF  | - |
-| 9 | YELLOW  | D4| X  | Axis of coordinates |
-| 10 | YELLOW/BLACK  |D5| Y  | Axis of coordinates |
-| 11 | BROWN  |D6| Z  | Axis of coordinates |
+| 9 | YELLOW  | D4| X, 1  | Axis of coordinates |
+| 10 | YELLOW/BLACK  |D5| Y, 2  | Axis of coordinates |
+| 11 | BROWN  |D6| Z, 3  | Axis of coordinates |
 | 12 | BROWN/BLACK  |D7| 4  | Axis of coordinates |
 | 13 | PINK  |D8| 5  | Axis of coordinates |
 | 14 | PINK/BLACK |D9| 6  | Axis of coordinates |
@@ -70,7 +70,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 18 | ORANGE/BLACK |   | COM, GND  | Control Switch |
 |-|-|-| -  |-|
 | 19 | LIGHT BLUE   |A0| C  | Emergency Switch, Imperative Switch |
-| 20 | BLUE/BLACK   |   | CN, GND  | Pin_Description |
+| 20 | BLUE/BLACK   |   | CN, GND  | Emergency Switch GND |
 | 21 | RED/BLACK   |   | -  | Spare |
 | 22 | SHIELD   |-| -| GND/SHIELD |
 |-|-|-| -  |-|
