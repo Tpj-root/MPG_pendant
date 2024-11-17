@@ -8,8 +8,10 @@ An MPG pendant (Manual Pulse Generator) is a handheld device used in LINUXCNC sy
 **Requirements for MPG pendant**
 
 G1- MPG-TM1474-100B-5L-Z6
+
 Arduino Nano
 
+pull up circuit
 
 
 
@@ -44,7 +46,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 ### DB25 Port Connector Pinout Configuration
 
 
-| Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
+| Pin_Number | Pin_Color | Pin_ArduinoNano  | Pin_Signal  | Pin_Description |
 | --- |  --- | --- |  --- | --- |
 | 1 | RED |   | +V, VCC, +5V5  | Rotary Encoder |
 | 2 | BLACK  |   | 0V, GND  | Rotary Encoder |
@@ -67,8 +69,8 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 17 | ORANGE  |A3| X100, 0.001  | Amplificatory Multiple |
 | 18 | ORANGE/BLACK |   | COM, GND  | Control Switch |
 |-|-|-| -  |-|
-| 19 | LIGHT BLUE   |A0| C  | Pin_Description |
-| 20 | BLUE/BLACK   |   | CN  | Pin_Description |
+| 19 | LIGHT BLUE   |A0| C  | Emergency Switch, Imperative Switch |
+| 20 | BLUE/BLACK   |   | CN, GND  | Pin_Description |
 | 21 | RED/BLACK   |   | -  | Spare |
 | 22 | SHIELD   |-| -| GND/SHIELD |
 |-|-|-| -  |-|
