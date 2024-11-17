@@ -43,32 +43,33 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 ### DB25 Port Connector Pinout Configuration
 
-| Pin_Number |Pin_ArduinoNano| Pin_Color  | Pin_Signal  | Pin_Description |
+| Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
 | 1 | RED  |   |+V, VCC, +5V5  | Pin_Description |
 | 2 | BLACK  |   | Pin_Name  | Pin_Description |
-| 3 | GREEN  |   | Pin_Name  | Pin_Description |
-| 4 | WHITE  |   | Pin_Name  | Pin_Description |
+| 3 | GREEN  |D2| Pin_Name  | Pin_Description |
+| 4 | WHITE  |D3| Pin_Name  | Pin_Description |
 | 5 | PURPLE  |   | Pin_Name  | Pin_Description |
 | 6 | PURPLE/BLACK  |   | Pin_Name  | Pin_Description |
 | 7 | GREEN/BLACK  |   | Pin_Name  | Pin_Description |
 | 8 | WHITE/BLACK  |   | Pin_Name  | Pin_Description |
-| 9 | Pin_Color  |   | Pin_Name  | Pin_Description |
-|  |   |   | OFF  |  |
-| 10 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 11 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 12 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 13 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 14 | Pin_Color  |   | Pin_Name  | Pin_Description |
+|-|-|-| OFF  |-|
+| 9 | YELLOW  |   | Pin_Name  | Pin_Description |
+| 10 | YELLOW/BLACK  |   | Pin_Name  | Pin_Description |
+| 11 | BROWN  |   | Pin_Name  | Pin_Description |
+| 12 | BROWN/BLACK  |   | Pin_Name  | Pin_Description |
+| 13 | PINK  |   | Pin_Name  | Pin_Description |
+| 14 | PINK/BLACK |   | Pin_Name  | Pin_Description |
 |-|-|-| -  |-|
-| 15 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 16 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 17 | Pin_Color  |   | Pin_Name  | Pin_Description |
-| 18 | Pin_Color  |   | Pin_Name  | Pin_Description |
+| 15 | GRAY  |   | Pin_Name  | Pin_Description |
+| 16 | GRAY/BLACK  |   | Pin_Name  | Pin_Description |
+| 17 | ORANGE  |   | Pin_Name  | Pin_Description |
+| 18 | ORANGE/BLACK |   | Pin_Name  | Pin_Description |
 |-|-|-| -  |-|
-| 19 | Pin_Color   |   | Pin_Name  | Pin_Description |
-| 20 | Pin_Color   |   | Pin_Name  | Pin_Description |
-| 21 | Pin_Color   |   | Pin_Name  | Pin_Description |
-| 22 | NOT_USED   |-| -| - |
+| 19 | LIGHT BLUE   |   | Pin_Name  | Pin_Description |
+| 20 | BLUE/BLACK   |   | Pin_Name  | Pin_Description |
+| 21 | RED/BLACK   |   | Pin_Name  | Pin_Description |
+| 22 | SHIELD   |-| -| SHIELD |
+|-|-|-| -  |-|
 | 23 | NOT_USED   |-| -| - |
 | 24 | NOT_USED   |-| -| - |
 | 25 | NOT_USED   |-| -| - |
