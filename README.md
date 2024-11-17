@@ -43,7 +43,9 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 ### DB25 Port Connector Pinout Configuration
 
+
 | Pin_Number | Pin_ArduinoNano | Pin_Color  | Pin_Signal  | Pin_Description |
+| --- |  --- | --- |  --- | --- |
 | 1 | RED  |   | +V, VCC, +5V5  | Pin_Description |
 | 2 | BLACK  |   | Pin_Name  | Pin_Description |
 | 3 | GREEN  |D2| Pin_Name  | Pin_Description |
