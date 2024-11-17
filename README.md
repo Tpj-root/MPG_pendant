@@ -54,24 +54,24 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 4 | <img src="colurs/white.png" width="20" height="20"> <p>WHITE</p>  |D3| B  | Rotary Encoder |
 | 5 | <img src="colurs/purple.png" width="20" height="20"> <p>PURPLE</p>  |   | A/  | Line Driver Type |
 | 6 | <img src="colurs/purple_black.png" width="20" height="20"> <p>PURPLE_BLACK</p>  |   | B/  | Line Driver Type |
-| 7 | GREEN/BLACK  |   | +  | Show Lamp |
-| 8 | WHITE/BLACK  |   | -, GND  | Show Lamp |
+| 7 | <img src="colurs/green_black.png" width="20" height="20"> <p>GREEN_BLACK</p>  |   | +  | Show Lamp |
+| 8 | <img src="colurs/white_black.png" width="20" height="20"> <p>WHITE_BLACK</p>  |   | -, GND  | Show Lamp |
 |-|-|-| OFF  | - |
-| 9 | YELLOW  | D4| X, 1  | Axis of coordinates |
-| 10 | YELLOW/BLACK  |D5| Y, 2  | Axis of coordinates |
-| 11 | BROWN  |D6| Z, 3  | Axis of coordinates |
-| 12 | BROWN/BLACK  |D7| 4  | Axis of coordinates |
-| 13 | PINK  |D8| 5  | Axis of coordinates |
-| 14 | PINK/BLACK |D9| 6  | Axis of coordinates |
+| 9 | <img src="colurs/yellow.png" width="20" height="20"> <p>YELLOW</p>  | D4| X, 1  | Axis of coordinates |
+| 10 | <img src="colurs/yellow_black.png" width="20" height="20"> <p>YELLOW_BLACK</p>  |D5| Y, 2  | Axis of coordinates |
+| 11 | <img src="colurs/brown.png" width="20" height="20"> <p>BROWN</p>  |D6| Z, 3  | Axis of coordinates |
+| 12 | <img src="colurs/brown_black.png" width="20" height="20"> <p>BROWN_BLACK</p>  |D7| 4  | Axis of coordinates |
+| 13 | <img src="colurs/pink.png" width="20" height="20"> <p>PINK</p>  |D8| 5  | Axis of coordinates |
+| 14 | <img src="colurs/pink_black.png" width="20" height="20"> <p>PINK_BLACK</p> |D9| 6  | Axis of coordinates |
 |-|-|-| -  |-|
-| 15 | GRAY  |A1| X1, 0.1  | Amplificatory Multiple |
-| 16 | GRAY/BLACK  |A2| X10, 0.01  | Amplificatory Multiple |
-| 17 | ORANGE  |A3| X100, 0.001  | Amplificatory Multiple |
-| 18 | ORANGE/BLACK |   | COM, GND  | Control Switch |
+| 15 | <img src="colurs/gray.png" width="20" height="20"> <p>GRAY</p>  |A1| X1, 0.1  | Amplificatory Multiple |
+| 16 | <img src="colurs/gray_black.png" width="20" height="20"> <p>GRAY_BLACK</p>  |A2| X10, 0.01  | Amplificatory Multiple |
+| 17 | <img src="colurs/orange.png" width="20" height="20"> <p>ORANGE</p>  |A3| X100, 0.001  | Amplificatory Multiple |
+| 18 | <img src="colurs/orange_black.png" width="20" height="20"> <p>ORANGE_BLACK</p> |   | COM, GND  | Control Switch |
 |-|-|-| -  |-|
-| 19 | LIGHT BLUE   |A0| C  | Emergency Switch, Imperative Switch |
-| 20 | BLUE/BLACK   |   | CN, GND  | Emergency Switch GND |
-| 21 | RED/BLACK   |   | -  | Spare |
+| 19 | <img src="colurs/lightblue.png" width="20" height="20"> <p>LIGHT_BLUE</p>   |A0| C  | Emergency Switch, Imperative Switch |
+| 20 | <img src="colurs/blue_black.png" width="20" height="20"> <p>BLUE_BLACK</p>   |   | CN, GND  | Emergency Switch GND |
+| 21 | <img src="colurs/red_black.png" width="20" height="20"> <p>RED_BLACK</p>   |   | -  | Spare |
 | 22 | SHIELD   |-| -| GND/SHIELD |
 |-|-|-| -  |-|
 | 23 | Not Connected   |-| -| - |
