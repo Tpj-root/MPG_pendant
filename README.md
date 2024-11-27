@@ -89,3 +89,16 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 	
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
