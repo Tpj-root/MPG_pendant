@@ -398,7 +398,19 @@ nano
 
 
 
+-----------------------
+
+Working pins
 
 
 
+LinuxCNC_encoder
 
+PIN 2 and 3 only
+
+
+--------------
+
+LinuxCNC_encoder_with_pin_XYZ
+
+PIN 2 and 3, 4, 5, 6 only
