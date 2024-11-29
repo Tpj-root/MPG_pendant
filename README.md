@@ -90,6 +90,16 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 	
 
 
+**PCB prototype**
+
+
+<p align="center">
+  <img src="Doc/TOP_Side.jpg" width="1000" height="682">
+  <img src="Doc/BOT_side.jpg" width="1000" height="682">
+</p>
+
+
+
 
 
 
