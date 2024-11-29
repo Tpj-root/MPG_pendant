@@ -43,7 +43,7 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 <p align="center">
   <img src="Doc/Front_view.jpg" width="300" height="300">
   <img src="Doc/Dimension.jpg" width="300" height="300">
-    <img src="Doc/Pull_up.png" width="600" height="315">
+    <img src="schematic/V_1/V_1.jpg" width="600" height="315">
 </p>
 
 
