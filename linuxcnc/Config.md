@@ -414,3 +414,31 @@ PIN 2 and 3 only
 LinuxCNC_encoder_with_pin_XYZ
 
 PIN 2 and 3, 4, 5, 6 only
+
+
+
+
+-------------------
+
+Fix the bug. negative when CW
+
+Pin 2 and Pin 3 swap positions with each other.
+
+
+
+Final CHECK
+
+halcmd loadusr arduino_All_ttyUSB0
+
+halcmd net counterx arduino_All_ttyUSB0.counter.0 axis.x.jog-counts
+
+halcmd setp axis.x.jog-scale 0.1
+
+
+
+
+
+
+
+
+
