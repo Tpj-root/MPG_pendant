@@ -1,0 +1,65 @@
+component mpgtosoko "notes";
+
+pin in bit xaxis_1_in;
+pin in bit yaxis_2_in;
+pin in bit zaxis_3_in;
+pin in bit axis_4_in;
+pin in bit axis_5_in;
+pin in bit axis_6_in;
+pin in bit scalex1;
+pin in bit scalex10;
+pin in bit scalex100;
+
+pin in float scaleValuex1;
+pin in float scaleValuex10;
+pin in float scaleValuex100;
+
+pin out bit xaxis_1;
+pin out bit xaxis_1_invert;
+pin out bit yaxis_2;
+pin out bit yaxis_2_invert;
+pin out bit zaxis_3;
+pin out bit zaxis_3_invert;
+pin out bit axis_4;
+pin out bit axis_4_invert;
+pin out bit axis_5;
+pin out bit axis_5_invert;
+pin out bit axis_6;
+pin out bit axis_6_invert;
+
+pin out float outputscale;
+
+function _;
+license "GPL";
+author "iamsab";
+;;
+
+FUNCTION(_) {
+    // Axis signals
+    xaxis_1 = xaxis_1_in;
+    xaxis_1_invert = !xaxis_1_in;
+
+    yaxis_2 = yaxis_2_in;
+    yaxis_2_invert = !yaxis_2_in;
+
+    zaxis_3 = zaxis_3_in;
+    zaxis_3_invert = !zaxis_3_in;
+
+    axis_4 = axis_4_in;
+    axis_4_invert = !axis_4_in;
+
+    axis_5 = axis_5_in;
+    axis_5_invert = !axis_5_in;
+
+    axis_6 = axis_6_in;
+    axis_6_invert = !axis_6_invert;
+
+    // Scale signals without resetting to zero
+    if (scalex1) {
+        outputscale = scaleValuex1;
+    } else if (scalex10) {
+        outputscale = scaleValuex10;
+    } else if (scalex100) {
+        outputscale = scaleValuex100;
+    }
+}

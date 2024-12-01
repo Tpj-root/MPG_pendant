@@ -1,0 +1,165 @@
+halcmd loadrt threads name1=test-mpg period1=1000000
+
+
+halcmd loadrt siggen
+
+halcmd addf siggen.0.update test-mpg
+
+
+
+loadrt and2 names=aa,ab,ac
+
+
+
+
+
+
+
+
+halrun -I -f saved.hal
+
+
+
+
+
+
+
+
+halcmd loadusr arduino_All_ttyUSB0
+halcmd loadrt mpgtosoko
+
+
+
+halcmd addf mpgtosoko.0 mpg
+
+
+
+# 1 secnds
+halcmd loadrt threads name1=mpg period1=1000000000
+
+
+
+
+
+# Setup the X axis only
+
+
+halcmd setp mpgtosoko.0.scaleValuex1 0.1
+halcmd setp mpgtosoko.0.scaleValuex10 0.01
+halcmd setp mpgtosoko.0.scaleValuex100 0.001
+
+
+
+# Arduino pin 10, 11 , 12
+#
+# 
+# scale
+
+All the pininto invert
+
+
+
+
+net scale1x arduino_All_ttyUSB0.din.10 => mpgtosoko.0.scalex1
+net scale10x arduino_All_ttyUSB0.din.11 => mpgtosoko.0.scalex10
+net scale100x arduino_All_ttyUSB0.din.12 => mpgtosoko.0.scalex100
+
+
+
+
+
+
+
+
+
+
+outputPIns Arduino
+
+
+arduino_All_ttyUSB0.counter.0
+
+
+
+# Emengency bottom
+arduino_All_ttyUSB0.din.13
+
+
+
+# axis x y z 4 5 6
+arduino_All_ttyUSB0.din.5
+arduino_All_ttyUSB0.din.6
+arduino_All_ttyUSB0.din.7
+arduino_All_ttyUSB0.din.8
+arduino_All_ttyUSB0.din.9
+
+
+
+
+net connetx arduino_All_ttyUSB0.din.4 => mpgtosoko.0.xaxis-1-in
+
+
+
+mpgtosoko.0.axis-4-invert
+
+
+
+mpgtosoko.0.yaxis-2-in
+mpgtosoko.0.zaxis-3-in
+mpgtosoko.0.axis-4-in
+mpgtosoko.0.axis-5-in
+mpgtosoko.0.axis-6-in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sab@SH4D0W6:~$ halcmd loadrt mpgtosoko
+<commandline>:0: waitpid failed /home/sab/Desktop/TRY_BUILD/linuxcnc-dev/bin/rtapi_app mpgtosoko
+<commandline>:0: /home/sab/Desktop/TRY_BUILD/linuxcnc-dev/bin/rtapi_app exited without becoming ready
+<commandline>:0: insmod for mpgtosoko failed, returned -1
+
+
+
+not avaible in location
+
+
+
+# NOTES
+
+
+
+The period value in LinuxCNC is specified in nanoseconds (ns).
+
+    1 second = 1,000,000,000 ns.
+    1 millisecond = 1,000,000 ns.
+    1 microsecond = 1,000 ns.
+
+So:
+
+    period1=1000000 = 1 millisecond (1 ms).
+    If you want 1 second, you would use period1=1000000000.
+
+Common Period Values:
+
+    1000000: 1 ms (typical for servo-thread).
+    100000000: 100 ms.
+    1000000000: 1 second.
+    
+    
+    

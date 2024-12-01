@@ -1,0 +1,74 @@
+loadusr arduino_All_ttyUSB0
+loadrt mpgtosoko
+
+loadrt threads name1=mpg period1=1000000
+
+addf mpgtosoko.0 mpg
+
+
+
+# set the invert
+# 
+# 
+setp arduino_All_ttyUSB0.din.10-invert TRUE
+setp arduino_All_ttyUSB0.din.11-invert TRUE
+setp arduino_All_ttyUSB0.din.12-invert TRUE
+setp arduino_All_ttyUSB0.din.13-invert TRUE
+setp arduino_All_ttyUSB0.din.4-invert TRUE
+setp arduino_All_ttyUSB0.din.5-invert TRUE
+setp arduino_All_ttyUSB0.din.6-invert TRUE
+setp arduino_All_ttyUSB0.din.7-invert TRUE
+setp arduino_All_ttyUSB0.din.8-invert TRUE
+setp arduino_All_ttyUSB0.din.9-invert TRUE
+
+
+
+# store the values
+setp mpgtosoko.0.scaleValuex1 0.1
+setp mpgtosoko.0.scaleValuex10 0.01
+setp mpgtosoko.0.scaleValuex100 0.001
+
+
+# Arduino pin 10, 11 , 12
+#
+# 
+# scale
+
+h net scale1x arduino_All_ttyUSB0.din.10 mpgtosoko.0.scalex1
+h net scale10x arduino_All_ttyUSB0.din.11 mpgtosoko.0.scalex10
+h net scale100x arduino_All_ttyUSB0.din.12 mpgtosoko.0.scalex100
+
+
+
+
+
+
+
+# axis x y z 4 5 6
+
+h net xconnect arduino_All_ttyUSB0.din.4 mpgtosoko.0.xaxis-1-in
+h net yconnect arduino_All_ttyUSB0.din.5 mpgtosoko.0.yaxis-2-in
+h net zconnect arduino_All_ttyUSB0.din.6 mpgtosoko.0.zaxis-3-in
+h net connect4 arduino_All_ttyUSB0.din.7 mpgtosoko.0.axis-4-in
+h net connect5 arduino_All_ttyUSB0.din.8 mpgtosoko.0.axis-5-in
+h net connect6 arduino_All_ttyUSB0.din.9 mpgtosoko.0.axis-6-in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (invert_condition) {
+    axis_6_invert = !axis_6_in;
+}
+
+
