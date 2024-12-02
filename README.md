@@ -73,12 +73,12 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 | 13 | <img src="mpg_colors_wire/__pink.png" width="80" height="40"> <p>PINK</p>  |D8| 5  | Axis of coordinates |
 | 14 | <img src="mpg_colors_wire/__pink_black.png" width="80" height="40"> <p>PINK_BLACK</p> |D9| 6  | Axis of coordinates |
 |-|-|-| -  |-|
-| 15 | <img src="mpg_colors_wire/__gray.png" width="80" height="40"> <p>GRAY</p>  |A1| X1, 0.1  | Amplificatory Multiple |
-| 16 | <img src="mpg_colors_wire/__gray_black.png" width="80" height="40"> <p>GRAY_BLACK</p>  |A2| X10, 0.01  | Amplificatory Multiple |
-| 17 | <img src="mpg_colors_wire/__orange.png" width="80" height="40"> <p>ORANGE</p>  |A3| X100, 0.001  | Amplificatory Multiple |
+| 15 | <img src="mpg_colors_wire/__gray.png" width="80" height="40"> <p>GRAY</p>  |D10| X1, 0.1  | Amplificatory Multiple |
+| 16 | <img src="mpg_colors_wire/__gray_black.png" width="80" height="40"> <p>GRAY_BLACK</p>  |D11| X10, 0.01  | Amplificatory Multiple |
+| 17 | <img src="mpg_colors_wire/__orange.png" width="80" height="40"> <p>ORANGE</p>  |D12| X100, 0.001  | Amplificatory Multiple |
 | 18 | <img src="mpg_colors_wire/__orange_black.png" width="80" height="40"> <p>ORANGE_BLACK</p> |   | COM, GND  | Control Switch |
 |-|-|-| -  |-|
-| 19 | <img src="mpg_colors_wire/__lightblue.png" width="80" height="40"> <p>LIGHT_BLUE</p>   |A0| C  | Emergency Switch, Imperative Switch |
+| 19 | <img src="mpg_colors_wire/__lightblue.png" width="80" height="40"> <p>LIGHT_BLUE</p>   |D13| C  | Emergency Switch, Imperative Switch |
 | 20 | <img src="mpg_colors_wire/__blue_black.png" width="80" height="40"> <p>BLUE_BLACK</p>   |   | CN, GND  | Emergency Switch GND |
 | 21 | <img src="mpg_colors_wire/__red_black.png" width="80" height="40"> <p>RED_BLACK</p>   |   | -  | Spare |
 | 22 | SHIELD   |-| -| GND/SHIELD |
