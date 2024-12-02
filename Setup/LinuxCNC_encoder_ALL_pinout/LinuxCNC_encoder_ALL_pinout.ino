@@ -160,7 +160,7 @@ Note that Analog Pin numbering is different to the Print on the PCB.
     //Arduino Mega	    2, 3, 18, 19, 20, 21	      13
     //Sanguino	        2, 10, 11	                  0
 
-Encoder Encoder0(2,3);      //A,B Pin
+Encoder Encoder0(2,3);      //A,B Pin   If you want to change CW and CCW, change the pin order (3, 2)
 //Encoder Encoder1(31,33);    //A,B Pin
 //Encoder Encoder2(A,B);
 //Encoder Encoder3(A,B);
