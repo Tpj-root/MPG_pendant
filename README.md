@@ -318,6 +318,7 @@ graph TD;
     style D fill:#0ff,stroke:#000,stroke-width:2px;
     style E fill:#f90,stroke:#000,stroke-width:2px;
     style F fill:#ff0,stroke:#000,stroke-width:2px;
+    style G fill:#FFD700,stroke:#000,stroke-width:2px; (Gold)
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
     C[.ino]  --> |C code|A
@@ -325,6 +326,8 @@ graph TD;
     E[MPG_Tosoko] --> |Wire_colurCode|A
     Pin_1[PIN_1 to 24]  --> E
     F[.hal] --> |link_signal|B
+    G[Linux_CNC] --> F
+    
 ```
 
 
