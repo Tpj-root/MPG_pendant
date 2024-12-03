@@ -282,16 +282,18 @@ graph TD;
     style G fill:#FFD700,stroke:#000,stroke-width:2px;
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
-    C[.ino<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino">Link</a>]  --> |C code|A
-    D[.py<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0">Link</a>]  --> |python| B
+    C[.ino[Link](https://github.com/Tpj-root/MPG_pendant/blob/main/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino)]  --> |C code|A
+    D[.py[Link](https://github.com/Tpj-root/MPG_pendant/blob/main/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0)]  --> |python| B
     E[MPG_Tosoko] --> |Wire_colurCode|H
     Pin_1[PIN_1 to 24]  --> E
-    F[.hal<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
+    F[.hal[Link](https://github.com/Tpj-root/MPG_pendant/blob/main/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh)] --> |link_signal|B
     G[Linux_CNC] --> F
     H[D-sub 25]  --> |PULLUP_RESISTOR| A
     
     
 ```
+
+
 
 
 
