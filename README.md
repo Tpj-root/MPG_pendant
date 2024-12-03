@@ -139,12 +139,12 @@ halcmd -f <filename>
 
 
 
- - loadrt &lt;modname&gt;<br><br># load realtime module
- - unloadrt <modname>           # unload realtime module
- - loadusr <compname>        # load Userspace component
- - unloadusr <compname> unload Userspace component
- - waitusr <name> # wait for Userspace component
- - unload <compname> Unloads  a  non-realtime component or realtime module.
+ - loadrt &lt;modname&gt;&nbsp;&nbsp;&nbsp;# load realtime module
+ - unloadrt &lt;modname&gt;&nbsp;&nbsp;&nbsp;# unload realtime module
+ - loadusr &lt;compname&gt;&nbsp;&nbsp;&nbsp;# load Userspace component
+ - unloadusr &lt;compname&gt;&nbsp;&nbsp;&nbsp;# unload Userspace component
+ - waitusr &lt;name&gt;&nbsp;&nbsp;&nbsp; # wait for Userspace component
+ - unload &lt;compname&gt;&nbsp;&nbsp;&nbsp; # Unloads  a  non-realtime component or realtime module.
 
 
 
@@ -324,11 +324,11 @@ graph TD;
     style G fill:#FFD700,stroke:#000,stroke-width:2px;
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
-    C[.ino<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino">Link</a>]  --> |C code|A
-    D[.py<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0">Link</a>]  --> |python| B
+    C[.ino<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino">Link</a>]  --> |C code|A
+    D[.py<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0">Link</a>]  --> |python| B
     E[MPG_Tosoko] --> |Wire_colurCode|A
     Pin_1[PIN_1 to 24]  --> E
-    F[.hal<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
+    F[.hal<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
     G[Linux_CNC] --> F
     
 ```
