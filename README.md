@@ -139,7 +139,7 @@ halcmd -f <filename>
 
 
 
- - loadrt <modname>     # load realtime module
+ - loadrt '<modname>'     # load realtime module
  - unloadrt <modname>           # unload realtime module
  - loadusr <compname>        # load Userspace component
  - unloadusr <compname> unload Userspace component
