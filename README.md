@@ -143,46 +143,23 @@ halcmd -f <filename>
  - unloadrt &lt;modname&gt;&nbsp;&nbsp;&nbsp;# unload realtime module
  - loadusr &lt;compname&gt;&nbsp;&nbsp;&nbsp;# load Userspace component
  - unloadusr &lt;compname&gt;&nbsp;&nbsp;&nbsp;# unload Userspace component
- - waitusr &lt;name&gt;&nbsp;&nbsp;&nbsp; # wait for Userspace component
- - unload &lt;compname&gt;&nbsp;&nbsp;&nbsp; # Unloads  a  non-realtime component or realtime module.
+ - waitusr &lt;name&gt;&nbsp;&nbsp;&nbsp;# wait for Userspace component
+ - unload &lt;compname&gt;&nbsp;&nbsp;&nbsp;# Unloads  a  non-realtime component or realtime module.
+ - newsig signame type &nbsp;&nbsp;&nbsp;#  Creates a new HAL signal called signame 
+ - delsig signame &nbsp;&nbsp;&nbsp;# delete signal
+ - linkpp     &nbsp;&nbsp;&nbsp;#  pinname1 [arrow] pinname2
+ - linkps      &nbsp;&nbsp;&nbsp;#  pinname [arrow] signame
+ - linksp      &nbsp;&nbsp;&nbsp;# signame [arrow] pinname
+ - net signame pinname &nbsp;&nbsp;&nbsp;# Create  signname to match the type of pinname 
+ - unlinkp pinname       &nbsp;&nbsp;&nbsp;# unlink  pin
+ - getp, gets  <name>   &nbsp;&nbsp;&nbsp;# get the value parameter, pin  or signal
+ - ptype, stype <name>   &nbsp;&nbsp;&nbsp;# get the type parameter, pin or signal
+ - setp, sets  <name>   &nbsp;&nbsp;&nbsp;# set the value parameter, pin or signal 
+ - addf functname threadname &nbsp;&nbsp;&nbsp;# add function
+ - delf functname threadname &nbsp;&nbsp;&nbsp;# delete function
+ - show [item] &nbsp;&nbsp;&nbsp;# Prints HAL items to stdout in human readable format.
 
-
-
-
-       newsig signame type  #  Creates a new HAL signal called signame 
-
-       delsig signame     # delete signal
-
-
-       linkpp      #  pinname1 [arrow] pinname2
-       linkps      #  pinname [arrow] signame
-       linksp       # signame [arrow] pinname
-       
- net signame pinname #   Create  signname to match the type of pinname 
-       
-unlinkp pinname            # unlink  pin
-
-
-
-
-
- getp, gets  <name>      # get the value parameter, pin  or signal
- 
- ptype, stype <name>     # get the type parameter, pin or signal
- 
- setp, sets  <name>     # set the value parameter, pin or signal 
-
-
-
-       addf functname threadname  # add function
- 
-       delf functname threadname  # delete function
-
-
-
-       show [item] # Prints HAL items to stdout in human readable format.
-
-       list type [pattern] # Prints the names of HAL items of the specified type.
+- list type [pattern] &nbsp;&nbsp;&nbsp;# Prints the names of HAL items of the specified type.
        
 ```
        ex:    list funct
@@ -192,15 +169,15 @@ unlinkp pinname            # unlink  pin
               list thread
 ```
 
-       source  filename.hal  # Execute the commands from filename.hal.
+- source  filename.hal  # Execute the commands from filename.hal.
 
 ```
-                  source <file_location/../../<filename.hal>>
+source <file_location/../../<filename.hal>>
                   
 ```
 
 
-       status [type]  #                 Prints status info about HAL.
+ - status [type]  &nbsp;&nbsp;&nbsp;# Prints status info about HAL.
 
 ```
                   status lock
@@ -210,7 +187,7 @@ unlinkp pinname            # unlink  pin
 ```
 
 
-       debug [level]  #  Sets the rtapi messaging level
+- debug [level]  &nbsp;&nbsp;&nbsp;# Sets the rtapi messaging level.
        
 ```
                   debug
@@ -221,12 +198,15 @@ unlinkp pinname            # unlink  pin
                   4=Debug
                   5=AllMessages
       
-``` 
+```
 
 
 
-       save [item]   # Prints HAL items to stdout in the form of HAL commands.
-                     # help to backup
+- save [item]
+
+ # Prints HAL items to stdout in the form of HAL commands.
+
+ # help to backup
 
 
 ``` 
@@ -235,44 +215,30 @@ unlinkp pinname            # unlink  pin
                   save sig | link | net | param | all | <filename.hal>
 
 
-``` 
+```
 
 
-       start #  Starts  execution  of realtime threads. 
-
- stop   # Stops execution of realtime threads.
-
-
-
-
-
-alias type name alias
-        # Assigns "alias" as a second name for the pin or parameter "name"
-
-unalias type alias
-        # Removes any alias from the pin or parameter alias.
+ - start &nbsp;&nbsp;&nbsp; #  Starts  execution  of realtime threads. 
+ - stop &nbsp;&nbsp;&nbsp;  # Stops execution of realtime threads.
+ - alias type name alias &nbsp;&nbsp;&nbsp;# Assigns "alias" as a second name for the pin or parameter "name"
+ - unalias type alias&nbsp;&nbsp;&nbsp; # Removes any alias from the pin or parameter alias.
 
 
 ``` 
-                  alias <type>   <name>          <alias>
-                  alias param setgen.0.dirhold iamnewalias
+alias <type>   <name>          <alias>
+alias param setgen.0.dirhold iamnewalias
+
+
+"type" must be pin or param.
+"name" must be an existing name or alias of the specified type.
+
+```
 
 
 
-  "type" must be pin or param.
-  "name" must be an existing name or alias of the specified type.
-
-``` 
-
-
-echo, unecho # encho commands from stdin to stderr
-
-
-       print [message]  # Prints the filename, linenumber and an optional message.
-
-
-
-quit, exit      # exit from halcmd
+ - echo, unecho # encho commands from stdin to stderr
+ - print [message]  # Prints the filename, linenumber and an optional message.
+ - quit, exit      # exit from halcmd
 
 
 
