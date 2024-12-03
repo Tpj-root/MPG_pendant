@@ -316,11 +316,13 @@ graph TD;
     style B fill:#ff0,stroke:#000,stroke-width:2px;
     style C fill:#0f0,stroke:#000,stroke-width:2px;
     style D fill:#0ff,stroke:#000,stroke-width:2px;
+    style E fill:#f90,stroke:#000,stroke-width:2px;
+
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
     C[.ino]  --> |C code|A
     D[.py]  --> |python| B
-
+    E[MPG_Tosoko] --> |Wire_colurCode|A
 ```
 
 
