@@ -139,16 +139,12 @@ halcmd -f <filename>
 
 
 
-       loadrt <modname>     # load realtime module
-unloadrt <modname>           # unload realtime module
-
-
-loadusr <compname>        # load Userspace component
-unloadusr <compname> unload Userspace component
-
-
-       waitusr <name> # wait for Userspace component
-unload <compname> Unloads  a  non-realtime component or realtime module.
+ - loadrt <modname>     # load realtime module
+ - unloadrt <modname>           # unload realtime module
+ - loadusr <compname>        # load Userspace component
+ - unloadusr <compname> unload Userspace component
+ - waitusr <name> # wait for Userspace component
+ - unload <compname> Unloads  a  non-realtime component or realtime module.
 
 
 
@@ -292,6 +288,7 @@ https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92
 https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/lib/hallib/locking_indexer.hal#L4
 ```
 
+
        lock [all|tune|none]
                 Locks HAL to some degree.
                 none - no locking done.
@@ -310,6 +307,12 @@ https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92
 
 
 
+
+# Stage_1  BASIC
+
+
+
+
 ```mermaid
 graph TD;
     style A fill:#f9f,stroke:#333,stroke-width:2px;
@@ -321,11 +324,11 @@ graph TD;
     style G fill:#FFD700,stroke:#000,stroke-width:2px;
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
-    C[.ino]  --> |C code|A
-    D[.py]  --> |python| B
+    C[.ino<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino">Link</a>]  --> |C code|A
+    D[.py<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0">Link</a>]  --> |python| B
     E[MPG_Tosoko] --> |Wire_colurCode|A
     Pin_1[PIN_1 to 24]  --> E
-    F[.hal] --> |link_signal|B
+    F[.hal<br><a href="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
     G[Linux_CNC] --> F
     
 ```
@@ -334,6 +337,7 @@ graph TD;
 
 
 
+# Stage_2 INTERMEDIATE
 
 
 
@@ -345,13 +349,7 @@ graph TD;
 
 
 
-# Stage_2
-
-
-
-
-
-# Stage_3
+# Stage_3 ADVANCED
 
 
 
