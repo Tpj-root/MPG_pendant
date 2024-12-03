@@ -178,7 +178,6 @@ source <file_location/../../<filename.hal>>
 
 
  - status [type]  &nbsp;&nbsp;&nbsp;# Prints status info about HAL.
-
 ```
                   status lock
                   status mem
@@ -188,7 +187,6 @@ source <file_location/../../<filename.hal>>
 
 
 - debug [level]  &nbsp;&nbsp;&nbsp;# Sets the rtapi messaging level.
-       
 ```
                   debug
                   0=None
@@ -202,13 +200,7 @@ source <file_location/../../<filename.hal>>
 
 
 
-- save [item]
-
- # Prints HAL items to stdout in the form of HAL commands.
-
- # help to backup
-
-
+- save [item]  # Prints HAL items to stdout in the form of HAL commands and help to backup.
 ``` 
                   save comp
                   save alias
