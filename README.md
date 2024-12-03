@@ -288,7 +288,7 @@ graph TD;
     Pin_1[PIN_1 to 24]  --> E
     F[.hal<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
     G[Linux_CNC] --> F
-    H[D-sub 25]  --> |PULLUP_RESISTOR| E
+    H[D-sub 25]  --> |PULLUP_RESISTOR| A
     
     
 ```
