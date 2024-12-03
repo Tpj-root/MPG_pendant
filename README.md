@@ -281,13 +281,15 @@ graph TD;
     style F fill:#ff0,stroke:#000,stroke-width:2px;
     style G fill:#FFD700,stroke:#000,stroke-width:2px;
     
-    A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
+    A[Arduino_ttyUSB0] --> |Serial communication| H
     C[.ino<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/LinuxCNC_encoder_ALL_pinout.ino">Link</a>]  --> |C code|A
     D[.py<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/arduino_All_ttyUSB0">Link</a>]  --> |python| B
     E[MPG_Tosoko] --> |Wire_colurCode|A
     Pin_1[PIN_1 to 24]  --> E
     F[.hal<br><a src="/Setup/LinuxCNC_encoder_ALL_pinout/mpg.sh">Link</a>] --> |link_signal|B
     G[Linux_CNC] --> F
+    H[D-sub 25]  --> |PULLUP_RESISTOR| B[HAL_Component]
+    
     
 ```
 
