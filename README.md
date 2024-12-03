@@ -323,6 +323,7 @@ graph TD;
     C[.ino]  --> |C code|A
     D[.py]  --> |python| B
     E[MPG_Tosoko] --> |Wire_colurCode|A
+    Pin_1[PIN_1 to 24]  --> E
 ```
 
 
