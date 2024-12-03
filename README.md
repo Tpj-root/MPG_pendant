@@ -318,7 +318,8 @@ graph TD;
     style D fill:#0ff,stroke:#000,stroke-width:2px;
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
-
+    C[.ino]  --> A
+    D[.py]  --> B
 
 ```
 
