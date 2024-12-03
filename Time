@@ -1,0 +1,35 @@
+
+sab@SH4D0W6:~$ halcmd loadrt mpgtosoko
+<commandline>:0: waitpid failed /home/sab/Desktop/TRY_BUILD/linuxcnc-dev/bin/rtapi_app mpgtosoko
+<commandline>:0: /home/sab/Desktop/TRY_BUILD/linuxcnc-dev/bin/rtapi_app exited without becoming ready
+<commandline>:0: insmod for mpgtosoko failed, returned -1
+
+
+
+not avaible in location
+
+
+
+# NOTES
+
+
+
+The period value in LinuxCNC is specified in nanoseconds (ns).
+
+    1 second = 1,000,000,000 ns.
+    1 millisecond = 1,000,000 ns.
+    1 microsecond = 1,000 ns.
+
+So:
+
+    period1=1000000 = 1 millisecond (1 ms).
+    If you want 1 second, you would use period1=1000000000.
+
+Common Period Values:
+
+    1000000: 1 ms (typical for servo-thread).
+    100000000: 100 ms.
+    1000000000: 1 second.
+    
+    
+    
