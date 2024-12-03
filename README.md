@@ -318,7 +318,7 @@ graph TD;
     style D fill:#0ff,stroke:#000,stroke-width:2px;
     style E fill:#f90,stroke:#000,stroke-width:2px;
     style F fill:#ff0,stroke:#000,stroke-width:2px;
-    style G fill:#FFD700,stroke:#000,stroke-width:2px; (Gold)
+    style G fill:#FFD700,stroke:#000,stroke-width:2px;
     
     A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
     C[.ino]  --> |C code|A
