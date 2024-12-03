@@ -103,6 +103,205 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 
 
+# Stage_1
+
+This method provides a simple way to connect pins, manage signals, and store parameter values.
+
+ - halcmd - manipulate the LinuxCNC HAL from the command line
+
+
+ - How to run halcmd
+ - Manipulate the linuxcnc HAL from the command line
+
+
+**Source_code**
+
+```
+https://github.com/LinuxCNC/linuxcnc/tree/master/src/hal
+
+```
+
+
+
+```
+halrun -I
+```
+
+ - Input file
+
+```
+halcmd -f <filename>
+
+```
+
+
+**halcmd Command list**
+
+
+
+       loadrt <modname>     # load realtime module
+unloadrt <modname>           # unload realtime module
+
+
+loadusr <compname>        # load Userspace component
+unloadusr <compname> unload Userspace component
+
+
+       waitusr <name> # wait for Userspace component
+unload <compname> Unloads  a  non-realtime component or realtime module.
+
+
+
+
+       newsig signame type  #  Creates a new HAL signal called signame 
+
+       delsig signame     # delete signal
+
+
+       linkpp      #  pinname1 [arrow] pinname2
+       linkps      #  pinname [arrow] signame
+       linksp       # signame [arrow] pinname
+       
+ net signame pinname #   Create  signname to match the type of pinname 
+       
+unlinkp pinname            # unlink  pin
+
+
+
+
+
+ getp, gets  <name>      # get the value parameter, pin  or signal
+ 
+ ptype, stype <name>     # get the type parameter, pin or signal
+ 
+ setp, sets  <name>     # set the value parameter, pin or signal 
+
+
+
+       addf functname threadname  # add function
+ 
+       delf functname threadname  # delete function
+
+
+
+       show [item] # Prints HAL items to stdout in human readable format.
+
+       list type [pattern] # Prints the names of HAL items of the specified type.
+       
+```
+       ex:    list funct
+              list comp
+              list pin
+              list sig
+              list thread
+```
+
+       source  filename.hal  # Execute the commands from filename.hal.
+
+```
+                  source <file_location/../../<filename.hal>>
+                  
+```
+
+
+       status [type]  #                 Prints status info about HAL.
+
+```
+                  status lock
+                  status mem
+                  status all
+                  
+```
+
+
+       debug [level]  #  Sets the rtapi messaging level
+       
+```
+                  debug
+                  0=None
+                  1=ErrorOnly
+                  2=Warnings
+                  3=INfo
+                  4=Debug
+                  5=AllMessages
+      
+``` 
+
+
+
+       save [item]   # Prints HAL items to stdout in the form of HAL commands.
+                     # help to backup
+
+
+``` 
+                  save comp
+                  save alias
+                  save sig | link | net | param | all | <filename.hal>
+
+
+``` 
+
+
+       start #  Starts  execution  of realtime threads. 
+
+ stop   # Stops execution of realtime threads.
+
+
+
+
+
+alias type name alias
+        # Assigns "alias" as a second name for the pin or parameter "name"
+
+unalias type alias
+        # Removes any alias from the pin or parameter alias.
+
+
+``` 
+                  alias <type>   <name>          <alias>
+                  alias param setgen.0.dirhold iamnewalias
+
+
+
+  "type" must be pin or param.
+  "name" must be an existing name or alias of the specified type.
+
+``` 
+
+
+echo, unecho # encho commands from stdin to stderr
+
+
+       print [message]  # Prints the filename, linenumber and an optional message.
+
+
+
+quit, exit      # exit from halcmd
+
+
+
+
+# locking_indexer.hal
+
+
+```
+https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/configs/sim/axis/axis_9axis.ini#L50
+https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/lib/hallib/README#L31
+https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/configs/sim/qtvcp_screens/qtdefault_9axis.ini#L61
+https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/configs/sim/axis/remap/cycle/cycle.ini#L55
+https://github.com/LinuxCNC/linuxcnc/blob/1ed894e830e871ad6f3f84c3213a1cd7dd1e92cc/lib/hallib/locking_indexer.hal#L4
+```
+
+       lock [all|tune|none]
+                Locks HAL to some degree.
+                none - no locking done.
+                tune - some tuning is possible (setp & such).
+                all  - HAL completely locked.
+
+       unlock [all|tune]
+                Unlocks HAL to some degree.
+                tune - some tuning is possible (setp & such).
+                all  - HAL completely unlocked.
 
 
 
@@ -110,6 +309,41 @@ https://components101.com/connectors/mil-dtl-24308-db25-parallel-port-connector
 
 
 
+
+```mermaid
+graph TD;
+    style A fill:#f9f,stroke:#333,stroke-width:2px;
+    style B fill:#ff0,stroke:#000,stroke-width:2px;
+    style C fill:#0f0,stroke:#000,stroke-width:2px;
+    style D fill:#0ff,stroke:#000,stroke-width:2px;
+    
+    A[Arduino_ttyUSB0] --> |Serial communication| B[HAL_Component]
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Stage_2
+
+
+
+
+
+# Stage_3
 
 
 
