@@ -1,0 +1,27 @@
+component toggle3scale "toggle logic for 3 scale values";
+
+pin in  bit sel0;
+pin in  bit sel1;
+pin in  bit sel2;
+
+pin in float in0;
+pin in float in1;
+pin in float in2;
+
+pin out float scalevalue;
+
+function _ nofp;
+license "GPL";
+author "Shadow";
+;;
+
+FUNCTION(_) {
+    // Select the scale value based on the selection pins
+    if (sel0) {  // If sel0 is True
+        scalevalue = in0;  // Set scalevalue to in0 value
+    } else if (sel1) {  // If sel1 is True
+        scalevalue = in1;  // Set scalevalue to in1 value
+    } else if (sel2) {  // If sel2 is True
+        scalevalue = in2;  // Set scalevalue to in2 value
+    }
+}

@@ -1,0 +1,67 @@
+component toggle6axis "toggle logic for 6 axes";
+
+pin in  bit xaxis;
+pin in  bit yaxis;
+pin in  bit zaxis;
+pin in  bit axis4;
+pin in  bit axis5;
+pin in  bit axis6;
+
+pin out bit xaxistoggle;
+pin out bit yaxistoggle;
+pin out bit zaxistoggle;
+pin out bit axis4toggle;
+pin out bit axis5toggle;
+pin out bit axis6toggle;
+
+function _ nofp;
+license "GPL";
+author "Shadow";
+;;
+
+FUNCTION(_) {
+    if (xaxis) {  // If xaxis is True
+        xaxistoggle = xaxis;  // Set xaxistoggle to xaxis state
+        yaxistoggle = 0; // Set yaxistoggle to 0
+        zaxistoggle = 0; // Set zaxistoggle to 0
+        axis4toggle = 0; // Set axis4toggle to 0
+        axis5toggle = 0; // Set axis5toggle to 0
+        axis6toggle = 0; // Set axis6toggle to 0
+    } else if (yaxis) {  // If yaxis is True
+        yaxistoggle = yaxis;  // Set yaxistoggle to yaxis state
+        xaxistoggle = 0; // Set xaxistoggle to 0
+        zaxistoggle = 0; // Set zaxistoggle to 0
+        axis4toggle = 0; // Set axis4toggle to 0
+        axis5toggle = 0; // Set axis5toggle to 0
+        axis6toggle = 0; // Set axis6toggle to 0
+    } else if (zaxis) {  // If zaxis is True
+        zaxistoggle = zaxis;  // Set zaxistoggle to zaxis state
+        xaxistoggle = 0; // Set xaxistoggle to 0
+        yaxistoggle = 0; // Set yaxistoggle to 0
+        axis4toggle = 0; // Set axis4toggle to 0
+        axis5toggle = 0; // Set axis5toggle to 0
+        axis6toggle = 0; // Set axis6toggle to 0
+    } else if (axis4) {  // If axis4 is True
+        axis4toggle = axis4;  // Set axis4toggle to axis4 state
+        xaxistoggle = 0; // Set xaxistoggle to 0
+        yaxistoggle = 0; // Set yaxistoggle to 0
+        zaxistoggle = 0; // Set zaxistoggle to 0
+        axis5toggle = 0; // Set axis5toggle to 0
+        axis6toggle = 0; // Set axis6toggle to 0
+    } else if (axis5) {  // If axis5 is True
+        axis5toggle = axis5;  // Set axis5toggle to axis5 state
+        xaxistoggle = 0; // Set xaxistoggle to 0
+        yaxistoggle = 0; // Set yaxistoggle to 0
+        zaxistoggle = 0; // Set zaxistoggle to 0
+        axis4toggle = 0; // Set axis4toggle to 0
+        axis6toggle = 0; // Set axis6toggle to 0
+    } else if (axis6) {  // If axis6 is True
+        axis6toggle = axis6;  // Set axis6toggle to axis6 state
+        xaxistoggle = 0; // Set xaxistoggle to 0
+        yaxistoggle = 0; // Set yaxistoggle to 0
+        zaxistoggle = 0; // Set zaxistoggle to 0
+        axis4toggle = 0; // Set axis4toggle to 0
+        axis5toggle = 0; // Set axis5toggle to 0
+    }
+}
+
